@@ -510,7 +510,7 @@ class FieldsMixin(JiraClient, EpicOperationsProto, UsersOperationsProto):
                 and isinstance(value, str)
             ):
                 sc = str(schema_custom or "").lower()
-                if any(x in sc for x in ("atlaskit", "richtext", "textarea", "document")):
+                if any(x in sc for x in ("atlaskit", "richtext", "document")):
                     return self._markdown_to_jira(value)
         # 3. Default: return as-is, but coerce option-like values for JIRA Cloud
         # (e.g. Request Type / option fields when field_definition is missing or unknown)
