@@ -80,6 +80,12 @@ uv run pytest --cov=src/mcp_atlassian --cov-report=term-missing  # coverage
 
 ---
 
+## Monthly maintenance (DroneDeploy fork)
+
+For upstream sync, security dependency updates, GAR publish, local Docker refresh, and Cursor MCP verification, follow **[MAINTENANCE.md](./MAINTENANCE.md)**. Agents should treat that file as the canonical runbook; `CLAUDE.md` points here for the same workflow.
+
+---
+
 ## Quick reference
 
 ```bash
